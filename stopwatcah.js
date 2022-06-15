@@ -16,12 +16,12 @@ let str;
 btn1.addEventListener("click", function () {
   str = setInterval(() => {
     sc.innerHTML = sec;
-    sec++;
-    if (sec > 4) {
+    ++sec;
+    if (sec >= 60) {
       min.innerHTML = mini;
       mini++;
       sec = 0;
-      if (mini > 4) {
+      if (mini > 60) {
         hur.innerHTML = hr;
         hr++;
         mini = 0;
